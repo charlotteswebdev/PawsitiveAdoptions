@@ -1,1 +1,1 @@
-Hello we're 4CodeGirls! We hope that you'll Git with our program. This will be our workspace for CFG Assignment 4. Our team is made up of: Jessica Upson, Kemi Oluwasanmi, Lauren Gray, Ana Catarina Basilio, Charlotte McKnight, Sophia Ahmedalie
+Hello we're 4CodeGirls! We hope that you'll Git with our program. This will be our workspace for CFG Assignment 4. Our team is made up of: Jessica Upson, Kemi Oluwasanmi, Lauren Gray, Ana Catarina Basilio, Charlotte McKnight and Sophia Ahmedalie.
