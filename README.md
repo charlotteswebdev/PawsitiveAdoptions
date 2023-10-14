@@ -1,7 +1,11 @@
-Hello we're 4CodeGirls! currently on the full stack pathway of the code first girls degree. We hope that you'll Git with our program. This will be our workspace for CFG Assignment 4. Our team is made up of: Jessica Upson, Kemi Oluwasanmi, Lauren Gray, Ana Catarina Basilio, Charlotte McKnight and Sophia Ahmedalie.
+# 4CodeGirls! 
+
+Our slogan;  ***Empowering Dreams, One Line at a Time!*** 
+
+Our team consists of: Jessica Upson, Kemi Oluwasanmi, Lauren Gray, Ana Catarina Basilio, Charlotte McKnight and Sophia Ahmedalie.
 
 
-# Get to know me
+# Get To Know 4CodeGirls! 
 
 ### Ana Catarina Basílio, but just **Catarina** is fine! 
 
@@ -12,7 +16,7 @@ A few things you should know about me:
 2. The coolest thing I found was a 4 thousand years old copper dagger inside a vessel;  
 3. I'm doing my PhD (and going crazy due to it, that is why I want to change areas); 
 4. I have 3 tattoos (one of them is of an archaeological vessel - archaeology nerd much!); 
-5. I have two ferrets and a dog; 
+5. I have two ferrets and a dog. 
 6. I practice kickboxing, 
 7. I have more than 35 published papers and a published book; 
 7. I speak 3 languages, fluently (Portuguese, Spanish and English). 
@@ -42,4 +46,24 @@ Here is a table of my general feedback/review of some of the topics we covered i
 
 
 I'll stop now! I'm really glad to meet you all! Feel free to contact me using my email <catarinasbasilio@gmail.com>. 
+
+### Sophia Athena Ahmed-Alie
+
+>*Fun Facts About Me!*
+
+🎂 Age & Origin: I'm 30 years old and proudly hail from NYC.
+
+🌍 Travel Bug: So far, I've journeyed to 7 countries. Next year, I'm setting my sights on exploring more of southern Europe.
+
+💼 Professional Path: My diverse career has spanned healthcare, hospitality, and property management. Now, I'm diving into the tech world.
+
+👨‍👩‍👦 Family Ties: I come from a big family with 3 siblings and 8 delightful nieces and nephews. My relatives are scattered across 6 of the 7 continents.
+
+🍳 Culinary Skills: I'm a talented home chef and baker, always ready to whip up something delicious.
+
+🎵 Musical Pursuits: Currently, I'm a budding upright bass and violin player. My ambition is to also master the piano.
+
+🚗 Driving Ambition: Believe it or not, I've never learned to drive. But, it's high on my to-do list!
+
+💻 Tech Exploration: I'm navigating my first tech course and I'm thrilled with my progress and experience so far.
 
