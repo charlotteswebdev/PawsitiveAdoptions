@@ -1,1 +1,19 @@
 random.txt
+
+What is the purpose of a .gitignore file?
+
+A .gitignore file is used to tell Git which files or folders to ignore when committing code to a Git repository.
+
+Typical uses:
+
+Build artifacts (bin, out)
+Logs, caches, temp files
+Dependency folders (node_modules)
+Editor metadata (.idea)
+OS-generated files (.DS_Store)
+Secrets and credentials (.env)
+
+Listing ignore patterns in .gitignore keeps repositories lean by avoiding large binary assets, temporary files, and unnecessary folders.
+It integrates with Git commands like git add.
+
+To summarize, .gitignore optimizes Git repos by ignoring non-source files from version control.
