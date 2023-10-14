@@ -47,9 +47,12 @@ Here is a table of my general feedback/review of some of the topics we covered i
 
 I'll stop now! I'm really glad to meet you all! Feel free to contact me using my email <catarinasbasilio@gmail.com>. 
 
-### Sophia Athena Ahmed-Alie
 
->*Fun Facts About Me!*
+<h1 style="color: #bd6b2d;">Sophia Athena Ahmed-Alie</h1>
+
+<h3 style="color: #ebe6a2;">Fun Facts About Me</h3>
+
+<details> <summary>Click to See 😜 </summary> 
 
 🎂 Age & Origin: I'm 30 years old and proudly hail from NYC.
 
@@ -61,9 +64,13 @@ I'll stop now! I'm really glad to meet you all! Feel free to contact me using my
 
 🍳 Culinary Skills: I'm a talented home chef and baker, always ready to whip up something delicious.
 
-🎵 Musical Pursuits: Currently, I'm a budding upright bass and violin player. My ambition is to also master the piano.
+🎵 Musical Pursuits: Currently, I'm a budding upright bass and violin player. My ambition is to also master the piano. I love all genres of music and try to attend a concert every month.
+>🎵[My favorite song](https://www.youtube.com/watch?v=wpR-OKoAtmQ) 🎵
 
 🚗 Driving Ambition: Believe it or not, I've never learned to drive. But, it's high on my to-do list!
 
 💻 Tech Exploration: I'm navigating my first tech course and I'm thrilled with my progress and experience so far.
+
+
+</details>
 
