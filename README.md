@@ -75,14 +75,14 @@ I'll stop now! I'm really glad to meet you all! Feel free to contact me using my
 </details>
 
 
-#Charlotte McKnight
+<h1> ** Charlotte McKnight **</h1>
 
-<h3 style="color: #4cbb17;">Hello World!</h3>
+<h3> Hello World! </h3>
 I'm Charlotte all the way from Belfast, Northern Ireland. ☘️
 
-<details> <summary> ##Things I ❤️ </summary> 
+<details> <summary> ** Things I ❤️ ** </summary> 
 
-- street photography and taking enviromental portraits.
+- Street photography and taking enviromental portraits.
 - Travelling,  I sometimes solo travel, as long I have my camera with me I'm happy to explore by myself. 
 - FOOD. Especially trying new food when travelling or learning new dishes to cook. I love spice.
 - Learning languages. I spent the last two years living in France, and my French has really improved. Now I'm interested in learning Portuguese, maybe @Ana-Catarina-Basilio can help me! 😋
@@ -92,9 +92,9 @@ I'm Charlotte all the way from Belfast, Northern Ireland. ☘️
 
 </details>
 
-#My tech journey 👩🏾‍💻
+<h3>My tech journey 👩🏾‍💻</h3>
 
-<details> <summary> Click to see 👀 </summary> 
+<details> <summary> ** Click to see 👀 ** </summary> 
 
 I started self studying python on Udemy in June 2023 whilst I was ending my teaching year. I quickly completed 4 CFG MOOCs and got accepted onto the CFG Degree! I am loving the journey so far, it's great to be a part of such a supportive and motivating community. I am learning much more than I would've if I only learnt alone.
 
