@@ -75,36 +75,36 @@ I'll stop now! I'm really glad to meet you all! Feel free to contact me using my
 </details>
 
 
-#**Charlotte McKnight**
+# **Charlotte McKnight**
 
-###Hello World!
-I'm Charlotte all the way from Belfast, Northern Ireland. ☘️
+### Hello World! I'm Charlotte from Belfast, Northern Ireland. ☘️
 
-##<details> **Things I ❤️**
+ <details> <summary> Things I ❤️ </summary>
 
 - Street photography and taking enviromental portraits.
-- Travelling,  I sometimes solo travel, as long I have my camera with me I'm happy to explore by myself. 
-- FOOD. Especially trying new food when travelling or learning new dishes to cook. I love spice.
+- Travelling,  I've visited 23 countries 🤯 sometimes I solo travel, as long I have my camera with me I'm happy to explore by myself. 
 - Learning languages. I spent the last two years living in France, and my French has really improved. Now I'm interested in learning Portuguese, maybe @Ana-Catarina-Basilio can help me! 😋
-- Skateboarding. I was previously a part of two girl skate organisations in Paris.
-- Running. Now I'm back in Belfast I'm a member of a social running club. 
-- Animals! I am a proud aunt to a cocker spaniel pup! I also met a camel for the first time this month and it was magnificent. 
+- Skateboarding 🛹 I was previously a part of two girl skate organisations in Paris.
+- Running 🏃🏾‍♀️ Now I'm back in Belfast I'm a member of a social running club. 
+- Animals! I am a proud aunt to a cocker spaniel pup! 🐶
 
 </details>
 
-##My tech journey 👩🏾‍💻
+## 
 
-###<details>**Click to see 👀**
+<details> <summary> My tech journey 👩🏾‍💻 ❤️ </summary>
 
 I started self studying python on Udemy in June 2023 whilst I was ending my teaching year. I quickly completed 4 CFG MOOCs and got accepted onto the CFG Degree! I am loving the journey so far, it's great to be a part of such a supportive and motivating community. I am learning much more than I would've if I only learnt alone.
 
-###My tech checklist
+### My tech checklist
 - [x] Get onto the CFG Degree.
 - [x] Foundational understanding of Python, JavaScript and SQL.
 - [x] Complete various personal projects showcasing coding skills.
 - [ ] Delve deeper into UX design.
 - [ ] Create a website portfolio with links to projects.
 - [ ] Graduate from the CFG Degree.
-- [ ] Find first entry level job in tech.
+- [ ] Find my first entry level job in tech.
 
 </details>
+
+__LinkedIn__ - https://www.linkedin.com/in/charlottevmcknight/
