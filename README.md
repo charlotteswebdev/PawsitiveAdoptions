@@ -90,7 +90,6 @@ I'll stop now! I'm really glad to meet you all! Feel free to contact me using my
 
 🏃‍♀️ Ambitions: I am currently training for the London Marathon in April 2024. I also am planning to hike the Arctic trail and row across the Atlantic Ocean in 2025.
 
-<hr>
 
 # **Charlotte McKnight**
 
@@ -125,5 +124,3 @@ I started self studying python on Udemy in June 2023 whilst I was ending my teac
 </details>
 
 __LinkedIn__ - https://www.linkedin.com/in/charlottevmcknight/
-
-
