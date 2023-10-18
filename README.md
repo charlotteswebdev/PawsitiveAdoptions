@@ -74,6 +74,23 @@ I'll stop now! I'm really glad to meet you all! Feel free to contact me using my
 
 </details>
 
+<hr>
+
+## About Me - Jess Upson
+
+🎂 Age: I'm 28 years old from Oxford UK.
+
+👨‍👩‍👧‍👧 Family: My husband and I have a 2 year old daughter and 1 year old twin girls.
+
+👩‍🔬 Previous profession: I studied Biology and did a PhD in Biochemistry before starting my journey into tech.
+
+👩‍💻 Current Profession: I have just joined DSTL as a Junior Software Engineer.
+
+🗺️ Travel: I love to travel and have visited 27 different countries so far. As a family we enjoy hiking, skiing and mountaineering.
+
+🏃‍♀️ Ambitions: I am currently training for the London Marathon in April 2024. I also am planning to hike the Arctic trail and row across the Atlantic Ocean in 2025.
+
+<hr>
 
 # **Charlotte McKnight**
 
@@ -108,3 +125,5 @@ I started self studying python on Udemy in June 2023 whilst I was ending my teac
 </details>
 
 __LinkedIn__ - https://www.linkedin.com/in/charlottevmcknight/
+
+
