@@ -160,3 +160,29 @@ After graduating and taking one of CFG's Kickstarter courses, I decided to ventu
 - 💻 My favourite parts of the course so far have been learning about APIs, databases and working with SQL!
   
 </details>
+
+
+# **Kemi Oluwasanmi**
+
+### Hello! I'm Kemi from Peterborough.
+
+ <details> <summary> About Me:</summary>
+
+- I have worked as a pharmacist in the NHS for 7 years but always felt that I wanted to learn something new.
+- I enjoy travelling but havent done much of it since after covid
+- I have an active 3 year old that keeps me on my toes
+- I love watching reality shows - love is blind, married at first sight , too hot to handle 🤭 
+-I run a small business where I sell sustainable feeding products
+- I am also a big Marvel Fan. I usually go to the cinema to watch released marvel movies on premier nights.
+  
+</details>
+
+
+<details> <summary> My tech journey so far  </summary>
+
+I wanted coding to bring my creativity to life, so I completed an online front-end developer course. I then started building small projects and responsive landing pages but remained curious about how the backend works. I found out about CFG, its mission and vision, and decided to enroll in CFG's Introduction to JavaScript classes. I enjoyed the teaching style - it was interactive and in real-time - so I decided to apply for the degree. So far, I have enjoyed all the lectures, and I now understand the use of Python for back-end development. At the end of the degree, I will be joining my sponsored company as a junior full-stack developer.
+
+</details>
+
+__LinkedIn__ - https://www.linkedin.com/in/kemi-ol/
+
