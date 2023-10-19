@@ -166,7 +166,7 @@ After graduating and taking one of CFG's Kickstarter courses, I decided to ventu
 
 ### Hello! I'm Kemi from Peterborough.
 
- <details> <summary> About Me:</summary>
+ <details> <summary> About Me</summary>
 
 - I have worked as a pharmacist in the NHS for 7 years but always felt that I wanted to learn something new.
 - I enjoy travelling but havent done much of it since after covid
