@@ -124,3 +124,39 @@ I started self studying python on Udemy in June 2023 whilst I was ending my teac
 </details>
 
 __LinkedIn__ - https://www.linkedin.com/in/charlottevmcknight/
+
+
+# Lauren Gray
+
+Hi 👋  I'm Lauren, I'm 24 and I'm a gallery assistant living in London!
+I became interested in tech through my art course introducing me to the world of _~Creative Computing!_ 
+
+I will admit that I'm finding the course a little ~~difficult~~ right now :( but I love a challenge and I'm having a lot of fun learning so I'm slowly getting there!
+> Chatgpt is my bestie getting me through this 🤖
+>
+
+<details> <summary> 👾 More about my tech journey: </summary>
+
+I studied Fine Art at university and during my degree, I taught myself to use Unity, web development and physical computing to create mini-games, virtual environments and websites to host my artwork! <sup>  ... In other words, my journey began by piecing together fragments of code to bring my ideas to life! </sup>
+
+I wanted to find ways to use _technology_ to make my work more fun and interactive...
+
+![gif](https://media4.giphy.com/media/CTX0ivSQbI78A/giphy.gif?cid=ecf05e47igvjgp1npbe752y9gxq782kvfolskm5kw0nyfdez&ep=v1_gifs_search&rid=giphy.gif&ct=g)
+
+I made it my mission to understand the code that I was working with and fell in love with it! ♥ ♥ ♥
+
+After graduating and taking one of CFG's Kickstarter courses, I decided to venture down this path further and now I'm here and absolutely loving it! Even if it is a little challenging at times :octocat:
+
+</details>
+
+
+<details> <summary> 🤠 fun facts: </summary>
+
+  
+- ⚖️  I'm a Libra! and although I'm a massive science nerd, I absolutely love learning about astrology!
+- 🧶 One of my favourite hobbies is knitting! and after my creative computing intro, I managed to merge the two interests together with [my art practice!](https://www.artsthread.com/profile/lauren-gray) My latest piece is featured in an upcoming collection curated by Google Arts and Culture! :)
+- 🎼 I **love** music! I've been playing the flute since I was 7 and was part of my local theatre's show orchestra and my borough's youth orchestra before I moved to London! Here's my [current favourite song!](https://www.youtube.com/watch?v=VArOUfVOjqI)
+- 🦸🏻‍♀️ I'm a Marvel fan! My top films & series are Wandavision, Thor: Ragnarok, and Doctor Strange and my favourite character is the Scarlet Witch!
+- 💻 My favourite parts of the course so far have been learning about APIs, databases and working with SQL!
+  
+</details>
