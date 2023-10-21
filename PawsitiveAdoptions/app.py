@@ -1,31 +1,33 @@
 from flask import Flask, jsonify
-from db import get_shelter_info, get_adoption_info, insert_new_dog_info
+from db_utils import db_shelter_overview, db_adopt_dog
 
 app = Flask(__name__)
 
-@app.route('/PawsitiveAdoptions/adopt', methods=['GET'])
-def adopt_a_dog():
+
+@app.route('/adopt/<location>/<age>/<size>/<sex>', methods=['GET'])
+def adopt_a_dog(location=None, age=None, size=None, sex=None ):
     try:
-        res = get_adoption_info()
-        return jsonify(res)
+        result = db_adopt_dog(location, age, size, sex)
+        return jsonify(result)
     except Exception as exc:
-        raise exc
+        return jsonify({'error': str(exc)}), 500
+
 
 @app.route('/PawsitiveAdoptions/rescue', methods=['POST'])
 def add_new_dog():
     try:
-        res = insert_new_dog_info()
-        return jsonify(res)
+        db_rescue_dog()
     except Exception as exc:
         raise exc
 
-@app.route('/PawsitiveAdoptions/shelter', methods=['GET'])
+
+@app.route('/shelter', methods=['GET'])
 def summary_of_shelter():
     try:
-        res = get_shelter_info()
-        return jsonify(res)
+        shelter_info = db_shelter_overview()
+        return jsonify(shelter_info)
     except Exception as exc:
-        raise exc
+        print(f" {exc} Failed to retrieve shelter information")
 
 
 if __name__ == '__main__':
