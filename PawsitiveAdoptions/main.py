@@ -25,11 +25,11 @@ def shelter_overview():
         print(err)
 
 
-def adopt_dog(location, age, size, gender):
+def adopt_a_dog(location, age, size, sex):
     print("Great! Let's find the perfect dog for you to adopt.")
-    print(f"Searching for a {size} {gender} {age} dog in {location} ...")
+    print(f"Searching for a {size} {sex} {age} dog in {location} ...")
     try:
-        response = requests.get('http://127.0.0.1:5000/shelter')
+        response = requests.get(f"http://127.0.0.1:5000/adopt/{location}/{age}/{size}/{sex}")
         if response.status_code == 200:
             data = response.json()
             pprint(data)
@@ -47,11 +47,11 @@ def rehome_dog():
 def get_dog_details():
     valid_ages = ["Puppy", "Adult", "Senior"]
     valid_sizes = ["Small", "Medium", "Large"]
-    valid_genders = ["Male", "Female"]
+    valid_sex = ["Male", "Female"]
     valid_locations = ["London", "Belfast"]
 
     while True:
-        location = input("Where are you looking to adopt from? London or Belfast?").title()
+        location = input("Where are you looking to adopt from? London or Belfast? ").title()
         if location in valid_locations:
             break
         else:
@@ -71,20 +71,20 @@ def get_dog_details():
             print("Invalid input. Please enter 'Small', 'Medium', or 'Large'.")
 
     while True:
-        gender = input("What gender of dog are you looking for? (Male, Female): ").title()
-        if gender in valid_genders:
+        sex = input("What gender of dog are you looking for? (Male, Female): ").title()
+        if sex in valid_sex:
             break
         else:
             print("Invalid input. Please enter 'Male' or 'Female'.")
 
-    return age, size, gender, location
+    return location, age, size, sex
 
 
 # Search criteria for re-homing a dog.
 def give_dog_details():
     valid_ages = ["Puppy", "Adult", "Senior"]
     valid_sizes = ["Small", "Medium", "Large"]
-    valid_genders = ["Male", "Female"]
+    valid_sex = ["Male", "Female"]
 
     while True:
         age = input("What age group is the dog? (Puppy, Adult, Senior): ").title()
@@ -101,38 +101,36 @@ def give_dog_details():
             print("Invalid input. Please enter 'Small', 'Medium', or 'Large'.")
 
     while True:
-        gender = input("What gender is the dog? (Male, Female): ").lower()
-        if gender in valid_genders:
+        sex = input("What gender is the dog? (Male, Female): ").lower()
+        if sex in valid_sex:
             break
         else:
             print("Invalid input. Please enter 'Male' or 'Female'.")
 
     rescue_name_p = input("Thanks, and what is the dog's name: ").title()
     print(f"{rescue_name_p} is most welcome, we will take good care of them.")
-    shelter_choice()
 
 
-def userchoice():
+def user_choice():
     action = input("Are you looking to adopt a dog, rehome a dog, or get an overview of the shelter? ("
                    "adopt/rehome/overview): ").lower()
     if action == "adopt":
-        location, age, size, gender = get_dog_details()
-        adopt_dog(location, age, size, gender)
+        location, age, size, sex = get_dog_details()
+        adopt_a_dog(location, age, size, sex)
     elif action == "overview" or action == "shelter":
         shelter_overview()
     elif action == "rehome":
         rehome_dog()
     else:
         print("Invalid choice. Please type 'adopt' or 'overview'.")
-        userchoice()
+        user_choice()
 
 
 def run():
     name = input("What is your name? ")
     welcome(name)
-    userchoice()
+    user_choice()
 
 
 if __name__ == "__main__":
     run()
-
