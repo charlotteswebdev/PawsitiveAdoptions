@@ -164,7 +164,7 @@ After graduating and taking one of CFG's Kickstarter courses, I decided to ventu
 
 # **Kemi Oluwasanmi**
 
-### Hello! I'm Kemi, 32 from Peterborough.
+Hello! I'm Kemi, 32 from Peterborough.
 
  <details> <summary> About Me</summary>
 
