@@ -1,5 +1,6 @@
-from flask import Flask, jsonify
-from db_utils import db_shelter_overview, db_adopt_dog
+import requests
+from flask import Flask, jsonify, request
+from db_utils import db_shelter_overview, db_adopt_dog, db_insert_new_member
 
 app = Flask(__name__)
 
@@ -13,12 +14,21 @@ def adopt_a_dog(location=None, age=None, size=None, sex=None ):
         return jsonify({'error': str(exc)}), 500
 
 
-@app.route('/PawsitiveAdoptions/rescue', methods=['POST'])
-def add_new_dog():
+@app.route('/new', methods=['POST'])
+def add_new_member():
     try:
-        db_rescue_dog()
+        data = request.get_json()
+        full_name = data['full_name']
+        email_address = data['email_address']
+        new_member = {
+            'full_name': full_name,
+            'email_address': email_address
+        }
+        db_insert_new_member(new_member)
+        return 'Membership updated',200
     except Exception as exc:
-        raise exc
+        error_message = {'error': str(exc)}
+        return jsonify(error_message),500
 
 
 @app.route('/shelter', methods=['GET'])

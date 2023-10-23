@@ -21,6 +21,8 @@ def _connect_to_db(db_name):
 
 # Getting shelter information
 def db_shelter_overview():
+    db_connection = None
+    cur = None
     try:
         db_name = "PawsitiveAdoptions"
         db_connection = _connect_to_db(db_name)
@@ -41,7 +43,6 @@ def db_shelter_overview():
                        'contact_details': contact,
                        'total_dogs': total_dogs}
             shelter_data.append(shelter)
-            print(shelter)
         return shelter_data
 
     except Exception:
@@ -55,13 +56,17 @@ def db_shelter_overview():
         print("DB connection is closed")
 
 
+# Adopting a dog
 def db_adopt_dog(location, age, size, sex):
+    db_connection = None
+    cur = None
+
     try:
         db_name = "PawsitiveAdoptions"
         db_connection = _connect_to_db(db_name)
         cur = db_connection.cursor()
-        print("\nSucessfully connected to DB: %s" % db_name)
-        print(f"The dogs available for adoption that meet your criteria in {location} are:")
+        shelter_id_query = None
+        print("\nSuccessfully connected to DB: %s" % db_name)
 
         # finding shelter_id based on location of adoptee
         if location == "London":
@@ -84,16 +89,15 @@ def db_adopt_dog(location, age, size, sex):
         if result:
             possible_dogs = []
             for i in result:
-                breed, dog_name = i
+                dog_name, breed = i
                 dogs_list = {
-                    'breed': breed,
                     'dog_name': dog_name,
+                    'breed': breed,
                 }
                 possible_dogs.append(dogs_list)
-                print(dogs_list)
             return possible_dogs
         else:
-            return 'Sorry, No dogs meet your criteria'
+            return "No dogs that meets your criteria at the moment. Please try another time."
 
     except Exception:
         raise DbConnectionError("Failed to connect to the DB")
@@ -106,51 +110,47 @@ def db_adopt_dog(location, age, size, sex):
             print("DB connection is closed")
 
 
-def insert_new_member():
+# Insert details of new members
+def db_insert_new_member(new_member):
+    db_connection = None  # Initialise db_connection so can use in the finally block
     try:
         db_name = "PawsitiveAdoptions"
         db_connection = _connect_to_db(db_name)
         cur = db_connection.cursor()
-        print("\nSucessfully connected to DB: %s" % db_name)
-
+        print("\nSuccessfully connected to DB: %s" % db_name)
 
         query = """INSERT INTO members ({}) VALUES ('{}', '{}')""".format(
             ', '.join(new_member.keys()),
             new_member['full_name'],
             new_member['email_address'],
         )
-
         cur.execute(query)
-
         db_connection.commit()
         cur.close()
-        print("New member name and email added to DB")
 
     except Exception:
         raise DbConnectionError("Failed to connect to the DB")
 
-    else:
+    finally:
         if db_connection:
             db_connection.close()
             print("DB connection is closed")
 
 
-#new member information to enter into db goes here:
-new_member = {
-    'full_name': 'Eileen Allen',
-    'email_address': 'eljallen@gmail.com'
-    }
 
 
 # calling functions
 def main():
-    # db_shelter_overview()
-    # calling function to find a dog that meets specific criteria
-    db_adopt_dog("Belfast", "Adult", "medium", "male")
-    insert_new_member()
+    db_shelter_overview()  # overview of the shelter
+    db_adopt_dog("Belfast", "adult", "medium", "male")  # calling function to find a dog that meets specific criteria
+    db_insert_new_member(new_member)
+    # new member information to enter into db goes here:- mock data to test the  db_insert_new_member function
+    # new_member = {
+    # 'full_name': 'Eileen Allen',
+    # 'email_address': 'eljallen@gmail.com'
+    # }
 
 
 # defining main
 if __name__ == "__main__":
     main()
-
