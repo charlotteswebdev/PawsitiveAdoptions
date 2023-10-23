@@ -93,7 +93,7 @@ def db_adopt_dog(location, age, size, sex):
                 print(dogs_list)
             return possible_dogs
         else:
-            return 'Sorry, No dogs meets your criteria'
+            return 'Sorry, No dogs meet your criteria'
 
     except Exception:
         raise DbConnectionError("Failed to connect to the DB")
@@ -106,70 +106,25 @@ def db_adopt_dog(location, age, size, sex):
             print("DB connection is closed")
 
 
-# to do.
-# Finding a dog to match criteria
-def insert_new_dog_info():
+def insert_new_member():
     try:
         db_name = "PawsitiveAdoptions"
         db_connection = _connect_to_db(db_name)
         cur = db_connection.cursor()
         print("\nSucessfully connected to DB: %s" % db_name)
 
-        # First query finds the amount of existing dogs in the database to assign new dog_id and detail_id
-        number_of_dogs_query = """SELECT COUNT(rescued_dog_id) AS no_of_dogs FROM rescued_dogs;"""
 
-        cur.execute(number_of_dogs_query)
-        result = cur.fetchall()
-
-        # converting number_of_dogs into list from tuple to access value
-        for i in result:
-            list_number_of_dogs = list(i)
-
-        # new variables to give new dogs their rescued_dog_id and dog_details_id
-        new_rescued_dog_id = list_number_of_dogs[0] + 1
-        new_rescued_dog_detail_id = list_number_of_dogs[0] + 1
-
-        # dictionaries for new dogs here. Stored inside function to find correct rescued_dog_id and dog_details_id
-        # rescued dog information goes here
-        dog_information = {
-            'rescued_dog_id': new_rescued_dog_id,
-            'dog_name': 'Mabel',
-            'temperament': 'calm'
-        }
-
-        # rescued dog details go here
-        dog_details = {
-            'details_id': new_rescued_dog_detail_id,
-            # for age: Puppy (<1 year) OR Adult (1-7 years) OR Senior (7< years)
-            'age': 'Adult (1-7 years)',
-            # for size: Small OR Medium OR Large OR Giant
-            'size': 'Medium',
-            'sex': 'Female',
-            'breed': 'Mixed breed'
-        }
-
-        dog_information_query = """INSERT INTO rescued_dogs ({}) VALUES ('{}', '{}', '{}')""".format(
-            ', '.join(dog_information.keys()),
-            dog_information['rescued_dog_id'],
-            dog_information['dog_name'],
-            dog_information['temperament']
+        query = """INSERT INTO members ({}) VALUES ('{}', '{}')""".format(
+            ', '.join(new_member.keys()),
+            new_member['full_name'],
+            new_member['email_address'],
         )
 
-        dog_details_query = """INSERT INTO dog_details ({}) VALUES ('{}', '{}', '{}', '{}', '{}')""".format(
-            ', '.join(dog_details.keys()),
-            dog_details['details_id'],
-            dog_details['age'],
-            dog_details['size'],
-            dog_details['sex'],
-            dog_details['breed']
-        )
-
-        cur.execute(dog_information_query)
-        cur.execute(dog_details_query)
+        cur.execute(query)
 
         db_connection.commit()
         cur.close()
-        print("Dog information and details added to DB")
+        print("New member name and email added to DB")
 
     except Exception:
         raise DbConnectionError("Failed to connect to the DB")
@@ -180,12 +135,19 @@ def insert_new_dog_info():
             print("DB connection is closed")
 
 
+#new member information to enter into db goes here:
+new_member = {
+    'full_name': 'Eileen Allen',
+    'email_address': 'eljallen@gmail.com'
+    }
+
+
 # calling functions
 def main():
     # db_shelter_overview()
     # calling function to find a dog that meets specific criteria
     db_adopt_dog("Belfast", "Adult", "medium", "male")
-    # insert_new_dog_info()
+    insert_new_member()
 
 
 # defining main
