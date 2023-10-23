@@ -36,12 +36,12 @@ def adopt_a_dog(location, age, size, sex):
     except Exception as err:
         print(err)
 
-
-# The third api for the post method is what's left to do
-def rehome_dog():
-    print("Alright, please enter the following info of the dog you'd like to rehome:")
-    give_dog_details()
-
+#adding member info
+def become_member():
+    print("Excellent news, please enter the following details:")
+    name = input("Type in your full name: ").title()
+    email_address = input(f"Welcome aboard {name}, finally, type in your email address: ")
+    print("Thanks, your details have been stored in our mailing list 😊")
 
 # Search criteria for dog adoption
 def get_dog_details():
@@ -49,7 +49,7 @@ def get_dog_details():
     valid_sizes = ["Small", "Medium", "Large"]
     valid_sex = ["Male", "Female"]
     valid_locations = ["London", "Belfast"]
-
+#User input validation with error messages.
     while True:
         location = input("Where are you looking to adopt from? London or Belfast? ").title()
         if location in valid_locations:
@@ -79,48 +79,16 @@ def get_dog_details():
 
     return location, age, size, sex
 
-
-# Search criteria for re-homing a dog.
-def give_dog_details():
-    valid_ages = ["Puppy", "Adult", "Senior"]
-    valid_sizes = ["Small", "Medium", "Large"]
-    valid_sex = ["Male", "Female"]
-
-    while True:
-        age = input("What age group is the dog? (Puppy, Adult, Senior): ").title()
-        if age in valid_ages:
-            break
-        else:
-            print("Invalid input. Please enter 'Puppy', 'Adult', or 'Senior'.")
-
-    while True:
-        size = input("What size is the dog? (Small, Medium, Large): ").lower()
-        if size in valid_sizes:
-            break
-        else:
-            print("Invalid input. Please enter 'Small', 'Medium', or 'Large'.")
-
-    while True:
-        sex = input("What gender is the dog? (Male, Female): ").lower()
-        if sex in valid_sex:
-            break
-        else:
-            print("Invalid input. Please enter 'Male' or 'Female'.")
-
-    rescue_name_p = input("Thanks, and what is the dog's name: ").title()
-    print(f"{rescue_name_p} is most welcome, we will take good care of them.")
-
-
 def user_choice():
-    action = input("Are you looking to adopt a dog, rehome a dog, or get an overview of the shelter? ("
-                   "adopt/rehome/overview): ").lower()
+    action = input("Are you looking to adopt a dog, get an overview of a shelter, or become a member? ("
+                   "adopt/overview/member): ").lower()
     if action == "adopt":
         location, age, size, sex = get_dog_details()
         adopt_a_dog(location, age, size, sex)
     elif action == "overview" or action == "shelter":
         shelter_overview()
-    elif action == "rehome":
-        rehome_dog()
+    elif action == "member":
+        become_member()
     else:
         print("Invalid choice. Please type 'adopt' or 'overview'.")
         user_choice()
