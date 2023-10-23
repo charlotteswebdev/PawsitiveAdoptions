@@ -32,6 +32,5 @@ Once the API is running, you can access it through your web browser or using a t
 The API will be available at http://127.0.0.1:5000/.
 
 
-7. Troubleshooting:
-
+Troubleshooting:
 For any issues check the terminal where the Flask application is running to see the error messages. 
