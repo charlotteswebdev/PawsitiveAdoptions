@@ -32,6 +32,13 @@ CREATE TABLE IF NOT EXISTS rescued_dogs (
     FOREIGN KEY (details_id) REFERENCES dog_details(details_id)
 );
 
+-- creating table for members mailing list subscription
+CREATE TABLE IF NOT EXISTS members (
+    member_id INTEGER PRIMARY KEY AUTO_INCREMENT,
+    full_name VARCHAR(100) NOT NULL,
+    email_address VARCHAR(100) NOT NULL
+);
+
 -- creating index in the most used fields (to make them faster)
 CREATE INDEX idx_age ON dog_details(age);
 CREATE INDEX idx_size ON dog_details(size);
@@ -48,7 +55,7 @@ VALUES
 -- Inserting data for dog_details
 INSERT INTO dog_details (age, size, sex, breed)
 VALUES
-	("Puppy (<1 year)", "Small", "Male", "Labrador"),
+    ("Puppy (<1 year)", "Small", "Male", "Labrador"),
     ("Adult (1-7 years)", "Medium", "Female", "Mixed breed"),
     ("Senior (7< years)", "Large", "Male", "German Shepherd"),
     ("Puppy (<1 year)", "Small", "Female", "Mixed breed"),
@@ -62,12 +69,12 @@ VALUES
     ("Adult (1-7 years)", "Medium", "Male", "Cocker Spaniel"),
     ("Senior (7< years)", "Large", "Female", "Mixed breed"),
     ("Adult (1-7 years)", "Medium", "Male", "Mixed breed"),
-	("Adult (1-7 years)", "Large", "Male", "Bernese Mountain Dog");
+    ("Adult (1-7 years)", "Large", "Male", "Bernese Mountain Dog");
     
 -- Linking dogs to shelters and connecting them to dog_details
 INSERT INTO rescued_dogs (dog_name, temperament, shelter_id, details_id)
 VALUES
-	('Buddy', 'Friendly', 1, 1),
+        ('Buddy', 'Friendly', 1, 1),
 	('Lacy', 'Energetic', 1, 2), 
 	('Max', 'Calm', 1, 3),
 	('Nina', 'Playful', 1, 4),
@@ -81,6 +88,14 @@ VALUES
 	('Zeus', 'Curious', 2, 12),
 	('Rosie', 'Playful', 2, 13),
 	('Oliver', 'Calm', 2, 14),
-    ('Rigel', 'Crazy', 2, 15);
-    
+        ('Rigel', 'Crazy', 2, 15);
+
+-- inserting data into members table
+INSERT INTO members (full_name, email_address)
+VALUES
+    ("Emma White", "emmwhite@gmail.com"),
+    ("Joe FitzGerald", "jofitz16@outlook.com"),
+    ("Kyle Sloan", "sloank8@gmail.com"),
+    ("Liz Tanner", "lltanner@gmail.com"),
+    ("Maxine Trujillo", "max1jantrujillo@hotmail.com");
     
