@@ -172,7 +172,7 @@ After graduating and taking one of CFG's Kickstarter courses, I decided to ventu
 - I enjoy travelling but havent done much of it since after covid
 - I have an active 3 year old that keeps me on my toes
 - I love watching reality shows - love is blind, married at first sight , too hot to handle 🤭 
--I run a small business where I sell sustainable feeding products
+- I run a small business where I sell sustainable feeding products
 - I am also a big Marvel Fan. I usually go to the cinema to watch released marvel movies on premier nights.
   
 </details>
