@@ -179,7 +179,7 @@ Hello! I'm Kemi, 32 from Peterborough.
 
 <details> <summary> My tech journey so far  </summary>
 
-I wanted coding to bring my creativity to life, so I completed an online front-end developer course. I then started building small projects and responsive landing pages but remained curious about how the backend works. I found out about CFG, its mission and vision, and decided to enroll in CFG's Introduction to JavaScript classes. I enjoyed the teaching style - it was interactive and in real-time - so I decided to apply for the degree. So far, I have enjoyed all the lectures, and I now understand the use of Python for back-end development. At the end of the degree, I will be joining my sponsored company as a junior full-stack developer.
+I wanted coding to bring my creativity to life, so I completed an online front-end developer course. I then started building small projects and responsive landing pages but remained curious about how the backend works. I found out about CFG, its mission and vision, and decided to enroll in CFG's Introduction to JavaScript classes. I enjoyed the teaching style - it was interactive and in real-time - so I decided to apply for the degree. So far, I have enjoyed all the lectures, and I am now starting to understand the use of Python for back-end development. At the end of the degree, I will be joining my sponsored company as a junior full-stack developer.
 
 </details>
 
