@@ -7,7 +7,6 @@ class DbConnectionError(Exception):
 
 
 # connecting with the DB
-
 def _connect_to_db(db_name):
     cnx = mysql.connector.connect(
         host=HOST,
@@ -136,19 +135,17 @@ def db_insert_new_member(new_member):
             db_connection.close()
             print("DB connection is closed")
 
-
-
+# new member information to enter into db goes here:- mock data to test the  db_insert_new_member function
+#new_member = {
+    #'full_name': 'Eileen Allen',
+   # 'email_address': 'eljallen@gmail.com'
+   # }
 
 # calling functions
 def main():
     db_shelter_overview()  # overview of the shelter
     db_adopt_dog("Belfast", "adult", "medium", "male")  # calling function to find a dog that meets specific criteria
     db_insert_new_member(new_member)
-    # new member information to enter into db goes here:- mock data to test the  db_insert_new_member function
-    # new_member = {
-    # 'full_name': 'Eileen Allen',
-    # 'email_address': 'eljallen@gmail.com'
-    # }
 
 
 # defining main
