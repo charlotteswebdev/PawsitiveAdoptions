@@ -20,6 +20,16 @@ def welcome(name):
     print(f"Welcome to PawsitiveAdoptions.com, {name}!".title())
 
 
+# Error Handling for Name
+def validate_name(name):
+    if name.replace(" ", "").isalpha():
+        return True
+    else:
+        print("Invalid name. Please use only alphabetic characters.")
+        return False
+
+
+
 # display shelter details
 def shelter_overview():
     try:
@@ -75,11 +85,28 @@ def add_new_member(new_member):
         print(err)
 
 
+# User Input Validation for Email
+def validate_email(email):
+    if " " not in email and "@" in email and "." in email:
+        return True
+    else:
+        print("Invalid email address. Please enter a valid email address.")
+        return False
+
+
+
 # collect new member details
 def collect_member_details():
     print("Excellent news, please enter the following details:")
-    full_name = input("Type in your full name: ").title()
-    email_address = input(f"Welcome aboard {full_name}, finally, type in your email address: ")
+    while True:
+        full_name = input("Type in your full name: ").title()
+        if validate_name(full_name):
+            break
+
+    while True:
+        email_address = input(f"Welcome aboard {full_name}, finally, type in your email address: ")
+        if validate_email(email_address):
+            break
 
     new_member = {
         "full_name": full_name,
@@ -101,6 +128,7 @@ def get_dog_details():
             break
         else:
             print("Invalid input. Please enter London or Belfast ")
+
     while True:
         age = input("What age group of dog are you looking for? (Puppy, Adult, Senior): ").lower()
         if age in valid_ages:
@@ -139,13 +167,28 @@ def user_choice():
         add_new_member(new_member_data)
     else:
         print("Invalid choice. Please type 'adopt' or 'overview' or 'member'.")
-        user_choice()
+
+
+def try_again():
+    choice = input("Do you want to try the process again? (yes/no): ").lower()
+    if choice == "yes" or choice == "y":
+        return True
+    elif choice == "no" or choice == "n":
+        return False
+    else:
+        print("Invalid choice. Please type 'yes' or 'no'.")
+        return try_again()
 
 
 def run():
-    name = input("What is your name? ")
-    welcome(name)
-    user_choice()
+    while True:
+        name = input("What is your name? ")
+        if validate_name(name):
+            welcome(name)
+            user_choice()
+            if not try_again():
+                print("Thank you for using PawsitiveAdoptions.com. Goodbye!")
+                break
 
 
 if __name__ == "__main__":
