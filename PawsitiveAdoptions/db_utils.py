@@ -135,7 +135,7 @@ def db_insert_new_member(new_member):
             db_connection.close()
             print("DB connection is closed")
 
-# new member information to enter into db goes here:- mock data to test the  db_insert_new_member function
+# new member information:- mock data to test the  db_insert_new_member function
 #new_member = {
     #'full_name': 'Eileen Allen',
    # 'email_address': 'eljallen@gmail.com'
@@ -145,7 +145,7 @@ def db_insert_new_member(new_member):
 def main():
     db_shelter_overview()  # overview of the shelter
     db_adopt_dog("Belfast", "adult", "medium", "male")  # calling function to find a dog that meets specific criteria
-    db_insert_new_member(new_member)
+    db_insert_new_member(new_member) # where new_member argument is displayed just above def main(). uncomment to use with function
 
 
 # defining main
