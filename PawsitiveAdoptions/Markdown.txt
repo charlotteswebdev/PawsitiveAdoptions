@@ -1,1 +1,36 @@
-Here's a guide on how to use our API:
+PawsitiveAdoptions is a dog shelter service that provides information about available dogs for adoption and shelter details. 
+
+This guide will walk you through how to interact with the PawsitiveAdoptions API.
+
+1. Download the Files:
+
+Download the PawsitiveAdoptions files from our GitHub repository and save them to a directory on your computer.
+
+2. Install Required Python Packages and organise python code:
+
+Create project for PawsitiveAdoptions python files.
+Open pycharm terminal or command prompt.
+Install the required Python packages:
+pip install Flask requests mysql-connector
+Update the config.py file with your database host, user, and password.
+
+
+3. Set Up the MySQL Database:
+
+Create and run PawsitiveAdoption database using our .sql code
+
+
+4. Run the API:
+
+Open pycharm terminal, run the Flask application (app.py) then run main.py file.
+Follow the prompts to adopt a dog, get an overview of shelters, or become a member.
+
+
+5. Access the API:
+
+Once the API is running, you can access it through your web browser or using a tool like Postman.
+The API will be available at http://127.0.0.1:5000/.
+
+
+Troubleshooting:
+For any issues check the terminal where the Flask application is running to see the error messages. 
