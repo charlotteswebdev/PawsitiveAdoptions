@@ -168,28 +168,26 @@ def user_choice():
     else:
         print("Invalid choice. Please type 'adopt' or 'overview' or 'member'.")
 
-
 def try_again():
     choice = input("Do you want to try the process again? (yes/no): ").lower()
     if choice == "yes" or choice == "y":
-        return True
+        new_option()
     elif choice == "no" or choice == "n":
-        return False
+        print("Thank you for using PawsitiveAdoptions.com. Goodbye!")
     else:
         print("Invalid choice. Please type 'yes' or 'no'.")
-        return try_again()
-
+        try_again()
 
 def run():
-    while True:
-        name = input("What is your name? ")
-        if validate_name(name):
-            welcome(name)
-            user_choice()
-            if not try_again():
-                print("Thank you for using PawsitiveAdoptions.com. Goodbye!")
-                break
+    name = input("What is your name? ")
+    if validate_name(name):
+        welcome(name)
+        user_choice()
+        try_again()
 
+def new_option():
+    user_choice()
+    try_again()
 
 if __name__ == "__main__":
     run()
