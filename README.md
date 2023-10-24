@@ -188,8 +188,6 @@ __LinkedIn__ - https://www.linkedin.com/in/kemi-ol/
 
 <h1 style="color: #bd2da5;">Summary of Workflow</h1>
 
-- Indepth details of workflow available in the pdf file.
-
 Ana and Lauren (SQL):
 👑 Queens of Querying! Ana and Lauren, turning data into poetry, crafting databases with the elegance of SQL sorcery.
 
