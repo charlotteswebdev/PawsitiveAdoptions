@@ -34,3 +34,5 @@ The API will be available at http://127.0.0.1:5000/.
 
 Troubleshooting:
 For any issues check the terminal where the Flask application is running to see the error messages. 
+N.B. if there are errors related to your mysql authentication plugin you can use an older MySQL connector that supports the 'caching_sha2_password' plugin using pip:
+pip install mysql-connector-python==8.0.23
