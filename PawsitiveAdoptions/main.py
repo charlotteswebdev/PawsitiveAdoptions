@@ -23,11 +23,10 @@ def welcome(name):
 # Error Handling for Name
 def validate_name(name):
     if name.replace(" ", "").isalpha():
-        return True
+       return True
     else:
         print("Invalid name. Please use only alphabetic characters.")
         return False
-
 
 
 # display shelter details
@@ -94,14 +93,16 @@ def validate_email(email):
         return False
 
 
-
-# collect new member details
+# collect new member details and validate full name and email address
 def collect_member_details():
     print("Excellent news, please enter the following details:")
     while True:
         full_name = input("Type in your full name: ").title()
-        if validate_name(full_name):
+        name_parts = full_name.split()
+        if len(name_parts) >= 2 and all(part.isalpha() for part in name_parts):
             break
+        else:
+            print("Invalid name. Please enter both your first and last name using only alphabetic characters.")
 
     while True:
         email_address = input(f"Welcome aboard {full_name}, finally, type in your email address: ")
@@ -168,8 +169,9 @@ def user_choice():
     else:
         print("Invalid choice. Please type 'adopt' or 'overview' or 'member'.")
 
+
 def try_again():
-    choice = input("Do you want to try the process again? (yes/no): ").lower()
+    choice = input("Do you want to try another option? (yes/no): ").lower()
     if choice == "yes" or choice == "y":
         new_option()
     elif choice == "no" or choice == "n":
@@ -178,6 +180,7 @@ def try_again():
         print("Invalid choice. Please type 'yes' or 'no'.")
         try_again()
 
+
 def run():
     name = input("What is your name? ")
     if validate_name(name):
@@ -185,9 +188,11 @@ def run():
         user_choice()
         try_again()
 
+
 def new_option():
     user_choice()
     try_again()
+
 
 if __name__ == "__main__":
     run()
