@@ -185,3 +185,18 @@ I wanted coding to bring my creativity to life, so I completed an online front-e
 
 __LinkedIn__ - https://www.linkedin.com/in/kemi-ol/
 
+
+<h1 style="color: #bd2da5;">Summary of Workflow</h1>
+
+- Indepth details of workflow available in the pdf file.
+
+Ana and Lauren (SQL):
+👑 Queens of Querying! Ana and Lauren, turning data into poetry, crafting databases with the elegance of SQL sorcery.
+
+Charlotte and Sophia (Python):
+🐍 The Python Dynamic Duo, Charlotte and Sophia! Slithering through code like snakes in the grass, leaving trails of readable and powerful Python magic.
+
+Kemi and Jess (API):
+🦾 API Architects extraordinaire, Kemi and Jess! Weaving the web of connectivity, where data flows like a symphony. Masters of the API realm, making integration dreams a reality.
+
+
