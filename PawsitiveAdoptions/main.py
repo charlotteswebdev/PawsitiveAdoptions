@@ -23,7 +23,7 @@ def welcome(name):
 # Error Handling for Name
 def validate_name(name):
     if name.replace(" ", "").isalpha():
-       return True
+        return True
     else:
         print("Invalid name. Please use only alphabetic characters.")
         return False
@@ -65,7 +65,7 @@ def adopt_a_dog(location, age, size, sex):
             pprint(data)
         else:
             raise NoConnection("Unable to connect to our database at the moment")
-    except NoConnection as e:
+    except NoConnection as e:  # this will raise connection error
         print(e)
     except Exception as exc:
         print(exc)
