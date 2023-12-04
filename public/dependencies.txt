@@ -1,0 +1,27 @@
+so far extra installs are:
+< npm install react-leaflet leaflet --save >
+< npm install react-leaflet-cluster >
+
+
+
+
+sources that helped:
+Importing the map:
+- https://www.youtube.com/watch?v=ls_Eue1xUtY&list=PLyWyQBSWLw1NH1wsA0wkSMTlQ45P0AqCj 
+- https://leafletjs.com/reference.html
+- https://www.youtube.com/watch?v=jD6813wGdBA
+- https://www.robinwieruch.de/react-checkbox/
+
+Markers:
+- https://www.youtube.com/watch?v=wVnimcQsuwk 
+
+
+
+
+colour info for CSS:
+- Norway Spruce =  #1E4319
+- Sprouts Green =  #819A47
+- Mince Pie Pastry =  #EFD1A5
+- Ho, Ho, Ho Red =  #AF261C
+- Mulled Spice =  #5E1C25
+- Pudding Brown =  #340F13

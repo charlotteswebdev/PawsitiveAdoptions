@@ -1,0 +1,12 @@
+.checkboxes { 
+    color: #EFD1A5;
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    font-size: 22px;
+}
+
+.checkboxes input {
+    cursor: pointer;
+}

@@ -1,0 +1,11 @@
+/* sizing of map container */
+.leaflet-container {
+    border: 5px solid #EFD1A5;
+    border-radius: 2%;
+    background: none !important;
+    position: center;
+    height: 550px;
+    width: 85%;
+    margin: auto;
+    padding: 10px;
+  }
