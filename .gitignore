@@ -1,2 +1,0 @@
-.gitignore file is used to specify which files and directories should be ignored by Git, meaning Git won't track changes or include them in the version control system. 
-This is important because some files and directories generated during the development and build process shouldn't be stored in a Git repository, as they can be specific to each developer's local environment.
