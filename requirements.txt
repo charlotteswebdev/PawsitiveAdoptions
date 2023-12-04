@@ -1,2 +1,0 @@
-A requirements.txt file might be used when starting a new project and haven't added any dependencies yet. 
-Its primary purpose is to specify the dependencies required for the project to run successfully.
