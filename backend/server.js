@@ -12,7 +12,7 @@ app.use(cors()); // Enable CORS for all routes
 const connection = mysql.createConnection({
   host: 'localhost',
   user: 'root',
-  password: 'Doncross1!', // Replace with your MySQL password
+  password: '12345!', // Replace with your MySQL password
   database: 'wondermap'// Replace with your WonderMap database name
 });
 
