@@ -1,54 +1,46 @@
-// https://www.youtube.com/watch?v=jD6813wGdBA
-
-
+// Map.js
+import React, { useState, useEffect } from 'react';
 import './map.css';
-import osm from "./map_custom_tiler.js"; // map tiles ()
-
-import 'leaflet/dist/leaflet.css'; // map css
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'; // map container, tilelayer (map images) and markers (map pins)
-import { Icon } from 'leaflet'; // icon for map pins 
+import osm from "./map_custom_tiler.js";
+import 'leaflet/dist/leaflet.css';
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import { Icon } from 'leaflet';
 import MarkerClusterGroup from "react-leaflet-cluster";
+import BookButton from '../BookButton.js';
 
+function Map({ selectedCategories }) {
+  const [filteredEvents, setFilteredEvents] = useState([]);
 
-function Map(){
+  useEffect(() => {
+    if (selectedCategories.length > 0) {
+      // Fetch events based on selected categories
+      fetch(`http://localhost:3000/api/events?categories=${selectedCategories.join(',')}`)
+        .then(response => response.json())
+        .then(data => setFilteredEvents(data))
+        .catch(error => console.error('Error fetching events:', error));
+    } else {
+      // No categories selected, clear the filtered events
+      setFilteredEvents([]);
+    }
+  }, [selectedCategories]);
 
+  const mapPinIcon = new Icon({
+    iconUrl: "https://cdn-icons-png.flaticon.com/128/8944/8944264.png",
+    iconSize: [50, 50]
+  });
 
-    // writing as if these markers are coming from an api
-    const mapPin = [
-        {
-            geocode: [51.5, -0.09],
-            popUp: "Ice Skating"
-        },
-        {
-            geocode: [51.53, -0.11],
-            popUp: "Stocking Sewing"
-        }
-    ] 
-
-
-
-    // map pin icon can be imported png into project !
-    const mapPinIcon = new Icon({
-        iconUrl: "https://cdn-icons-png.flaticon.com/128/8944/8944264.png", // current icon from flaticon.com
-        iconSize: [50, 50] // pixel size of icon
-    })
-
-
-
-    return (
-        <MapContainer center={[51.509204, -0.136817]} zoom={13}>
-            <TileLayer url = {osm.maptiler.url} attribution = {osm.maptiler.attribution} />
-
-            <MarkerClusterGroup chunkedLoading>
-                {mapPin.map(marker => (
-                <Marker position={marker.geocode} icon={mapPinIcon}>
-                    <Popup> {marker.popUp} </Popup>
-                </Marker>
-                ))}
-                </MarkerClusterGroup>
-
-        </MapContainer>
-    )
+  return (
+    <MapContainer center={[51.509204, -0.136817]} zoom={13} maxZoom={15}>
+      <TileLayer url={osm.maptiler.url} attribution={osm.maptiler.attribution} />
+      <MarkerClusterGroup chunkedLoading>
+        {filteredEvents.map((event, index) => (
+          <Marker key={index} position={[event.latitude, event.longitude]} icon={mapPinIcon}>
+            <Popup>Event:{event.name}  <br/>Time:{event.event_time} <br/><BookButton/></Popup>
+          </Marker>
+        ))}
+      </MarkerClusterGroup>
+    </MapContainer>
+  );
 }
 
 export default Map;
