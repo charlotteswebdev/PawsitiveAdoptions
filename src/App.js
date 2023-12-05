@@ -10,17 +10,16 @@ function App() {
   const [categories, setCategories] = useState([]);
   const [selectedCategories, setSelectedCategories] = useState([]);
 
+  // Fetch categories from the api url at the first render
   useEffect(() => {
-    // Fetch categories from the server
     fetch('http://localhost:3000/api/categories')
       .then(response => response.json())
       .then(data => setCategories(data))
       .catch(error => console.error('Error fetching categories:', error));
   }, []);
 
+  // handle change of checkbox using filter and spread operator
   const handleCheckboxChange = (category, isChecked) => {
-    console.log('Handling checkbox change:', category, isChecked);
-
     if (isChecked) {
       setSelectedCategories((prevCategories) => [...prevCategories, category]);
     } else {
@@ -35,16 +34,18 @@ function App() {
       <header className="App-header">
         <BackButton />
       </header>
-
       <div className="checkboxesDiv">
-        {categories.map((categoryData) => (
+        {categories.map((categoryData) => {
+                    console.log('categoryData', categoryData);// check the categoryData in the console
+          return(
           <CategoryBox
-            key={categoryData.id} // Use a unique key for each category
-            id={categoryData.id.toLowerCase().replace(/\s+/g, '')}
+            key={categoryData.id} // unique key for each category required when using map function
+            id={categoryData.id.toLowerCase().replace(/\s+/g, '')}// converts characters to lowercase and removes spaces
             checkboxCategory={categoryData.label}
             onChange={(isChecked) => handleCheckboxChange(categoryData.label, isChecked)}
           />
-        ))}
+        );
+        })}
       </div>
       <div className="mapDiv">
         <Map selectedCategories={selectedCategories} />

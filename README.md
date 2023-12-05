@@ -16,6 +16,7 @@ You may also see any lint errors in the console.
 for backend 
 you should change directory to the backend folder 
 npm install to install all dependencies including express, mysql
+change to your own mysql password inside server.js
 open a second terminal and run node server.js
 if asks you to run on another localhost, enter yes.
 
